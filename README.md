@@ -23,7 +23,21 @@ Using the source [STM32Cube.AI Application](https://wiki.st.com/stm32mcu/wiki/AI
 - create an 'argmax' function
 - Call the AI_init function
   
-## USB Feature 
+## Pin Configuration
+### I2C Configuration
+- Software Pack -> Select Component -> Board Part -> AccGyr->LSM6DSL -> I2C
+- Pinout & Configuration -> I2C: 'Fast mode'. speed Frequency '400 kHz'
+- PB 10 'I2C2_SCL'
+- PB 11 'I2C2_SDA'
+- PD 11 'GPIO_EXIT11'
+- Software Packs -> X-Cube_MEMS1 -> Board Part Accgyr -> Platform Seeting ->I2C
+### UART
+- Connectivity -> USART1 -> Mode 'Asynchronous' -> Baud Rate to 115200 bit/s
+- Ensure PB6 and PB7 are configured
+### USB Feature 
+- PA 11 'USB_OTG_FS_DM'
+- PA 12 'USB_OTG_FS_DP'
+- Connectivity ->USB_OTG_FS -> Mode 'Host Only' -> Avtivate_VBUS 'Disable'
+- Middleware and Software Packs -> FATFS -> USB Disk
+- Middleware and Software Packs -> USB_HOST -> class 'Mass Storage Host Class'-> Platform Setting -> Drive_VBUS_FS 'GPIO:Output', 'PA9'
 
-
-## Lower Power
