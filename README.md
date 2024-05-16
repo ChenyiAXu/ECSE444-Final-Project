@@ -41,3 +41,6 @@ Using the source [STM32Cube.AI Application](https://wiki.st.com/stm32mcu/wiki/AI
 - Middleware and Software Packs -> FATFS -> USB Disk
 - Middleware and Software Packs -> USB_HOST -> class 'Mass Storage Host Class'-> Platform Setting -> Drive_VBUS_FS 'GPIO:Output', 'PA9'
 
+## Low Power
+- Remover the jumper at pin JP5
+- Use multimeter to measure the current at the pin
