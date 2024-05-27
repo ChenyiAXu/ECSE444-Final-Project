@@ -1,4 +1,4 @@
-# 444 Final Project: Human Motion Detection (HMR)
+# [444 Final Project: Human Motion Detection (HMR)](https://github.com/ChenyiAXu/ECSE444-Final-Project/blob/main/444final/Core/Src/main.c)
 
 A **CNN-based real-time Human Motion Detection (HMR)** system using **STM32 B-L475E-IOT01Ax kits**. The project is written in **C** and utilizes **USB, STM32AI, UART, and I2C** functionalities with **low power operation** optimization. The L4 board is worn on the wrist to imitate a watch, capable of classifying motions such as stationary, walking, running, jumping, clapping, and swimming.
 
