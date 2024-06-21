@@ -15,7 +15,7 @@ Adapted from ST, using **Keras** to process the motion sensing classifier model.
 Using the source [STM32Cube.AI Application](https://wiki.st.com/stm32mcu/wiki/AI:How_to_perform_motion_sensing_on_STM32L4_IoTnode#Add_STM32Cube-AI_to_your_project). 
 - Under artificial intelligence filter enable core
 - Config X-cube_AI component to use exisitng Keras model
-  - 'ADD Network' --> type to 'Keras' --> browse to select model
+  - ' ADD Network ' --> type to 'Keras' --> browse to select model
   - generate code
 - Include CUBE AI header
 - Declare neural network buffers
@@ -27,8 +27,8 @@ Using the source [STM32Cube.AI Application](https://wiki.st.com/stm32mcu/wiki/AI
 ### I2C Configuration
 - Software Pack -> Select Component -> Board Part -> AccGyr->LSM6DSL -> I2C
 - Pinout & Configuration -> I2C: 'Fast mode'. speed Frequency '400 kHz'
-- PB 10 'I2C2_SCL'
-- PB 11 'I2C2_SDA'
+- PB 10 `I2C2_SCL`
+- PB 11 I2C2_SDA'
 - PD 11 'GPIO_EXIT11'
 - Software Packs -> X-Cube_MEMS1 -> Board Part Accgyr -> Platform Seeting ->I2C
 ### UART
